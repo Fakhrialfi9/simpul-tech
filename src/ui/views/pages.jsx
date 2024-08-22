@@ -30,7 +30,7 @@ const Pages = () => {
                     initial={{ opacity: 0, x: 175 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 175 }}
-                    transition={{ duration: 0.75 }}>
+                    transition={{ duration: 0.5 }}>
                     <h5>Task</h5>
                     <button onClick={handleSelectMenuTask}>
                       <BookOpenCheck />
@@ -47,7 +47,7 @@ const Pages = () => {
                     initial={{ opacity: 0, x: 100 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 100 }}
-                    transition={{ duration: 0.5 }}>
+                    transition={{ duration: 0.25 }}>
                     <h5>Inbox</h5>
                     <button onClick={handleSelectMenuInbox}>
                       <Inbox />
