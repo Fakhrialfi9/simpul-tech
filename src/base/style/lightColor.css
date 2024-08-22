@@ -1,0 +1,155 @@
+/* ================================================================================================== */
+/* =============================================  Light Mode  ======================================= */
+/* ================================================================================================== */
+
+body.light {
+  background-color: var(--background-color-solid-0);
+  color: var(--text-color-solid-0);
+  transition: all 0.01s ease;
+
+  --shadow-primary: rgba(0, 0, 0, 0.1);
+  --background-color-transparent-0: rgb(255, 255, 255, 0.85);
+  --background-color-transparent-100: rgb(255, 255, 255, 0.25);
+  --text-color-transparent-0: rgb(16, 18, 20, 0.2);
+  --text-color-transparent-100: rgb(16, 18, 20, 0.5);
+
+  /* Background Color */
+  --background-color-solid-0: rgb(255, 255, 255);
+  --background-color-solid-50: rgb(245, 247, 250);
+  --background-color-solid-100: rgb(247, 248, 249);
+  --background-color-solid-150: rgb(242, 243, 245);
+  --background-color-solid-200: rgb(241, 242, 244);
+  --background-color-solid-250: rgb(230, 233, 237);
+  --background-color-solid-300: rgb(220, 223, 228);
+  --background-color-solid-350: rgb(189, 198, 213);
+  --background-color-solid-400: rgb(179, 185, 196);
+  --background-color-solid-500: rgb(133, 144, 162);
+
+  /* Text Solid Color */
+  --text-color-solid-0: rgb(16, 18, 20);
+  --text-color-solid-50: rgb(22, 26, 29);
+  --text-color-solid-100: rgb(29, 33, 37);
+  --text-color-solid-200: rgb(34, 39, 43);
+  --text-color-solid-250: rgb(40, 46, 51);
+  --text-color-solid-300: rgb(56, 65, 74);
+  --text-color-solid-350: rgb(44, 51, 58);
+  --text-color-solid-400: rgb(69, 79, 89);
+  --text-color-solid-500: rgb(89, 103, 115);
+  --text-color-solid-600: rgb(115, 132, 150);
+  --text-color-solid-700: rgb(140, 155, 171);
+  --text-color-solid-800: rgb(159, 173, 188);
+  --text-color-solid-900: rgb(182, 194, 207);
+  --text-color-solid-1000: rgb(199, 209, 219);
+  --text-color-solid-1100: rgb(222, 228, 234);
+
+  /* Text Alpha Color */
+  --text-color-alpha-0: rgba(3, 4, 4, 0.26);
+  --text-color-alpha-100: rgba(188, 214, 240, 0.04);
+  --text-color-alpha-150: rgba(184, 209, 242, 0.06);
+  --text-color-alpha-200: rgba(161, 189, 217, 0.08);
+  --text-color-alpha-250: rgba(200, 225, 249, 0.1);
+  --text-color-alpha-300: rgba(166, 197, 226, 0.16);
+  --text-color-alpha-350: rgba(195, 222, 254, 0.2);
+  --text-color-alpha-400: rgba(191, 219, 248, 0.28);
+  --text-color-alpha-500: rgba(155, 180, 202, 0.5);
+
+  /* Diver Solid Color */
+  --diver-color-solid-0: rgba(115, 132, 150, 0.1);
+  --diver-color-solid-100: rgba(188, 214, 240, 0.35);
+  --diver-color-solid-150: rgba(184, 209, 242, 0.4);
+  --diver-color-solid-200: rgba(161, 189, 217, 0.425);
+  --diver-color-solid-250: rgba(200, 225, 249, 0.45);
+  --diver-color-solid-300: rgba(166, 197, 226, 0.485);
+  --diver-color-solid-350: rgba(195, 222, 254, 0.5);
+  --diver-color-solid-400: rgba(191, 219, 248, 0.525);
+  --diver-color-solid-500: rgba(155, 180, 202, 0.5);
+
+  /* Gray Solid Color (Optional) */
+  --gray-50: #131920;
+  --gray-100: #222934;
+  --gray-200: #333d4c;
+  --gray-300: #4e5562;
+  --gray-400: #6c727f;
+  --gray-500: #9ca3af;
+  --gray-600: #cad0d9;
+  --gray-700: #e0e5eb;
+  --gray-800: #eef1f6;
+  --gray-900: #f5f7fa;
+  --gray-950: #ffffff;
+}
+
+/* ================================================================================================== */
+/* ==========================================  Root Light Mode  ===================================== */
+/* ================================================================================================== */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Background Color */
+    --background-color-primary: var(--background-color-solid-0);
+    --background-color-secondary: var(--background-color-solid-50);
+    --background-color-third: var(--background-color-solid-100);
+
+    /* Background Color */
+    --background-color-solid-0: rgb(255, 255, 255);
+    --background-color-solid-100: rgb(247, 248, 249);
+    --background-color-solid-150: rgb(242, 243, 245);
+    --background-color-solid-200: rgb(241, 242, 244);
+    --background-color-solid-250: rgb(230, 233, 237);
+    --background-color-solid-300: rgb(220, 223, 228);
+    --background-color-solid-350: rgb(189, 198, 213);
+    --background-color-solid-400: rgb(179, 185, 196);
+    --background-color-solid-500: rgb(133, 144, 162);
+
+    /* Text Solid Color */
+    --text-color-solid-0: rgb(16, 18, 20);
+    --text-color-solid-50: rgb(22, 26, 29);
+    --text-color-solid-100: rgb(29, 33, 37);
+    --text-color-solid-200: rgb(34, 39, 43);
+    --text-color-solid-250: rgb(40, 46, 51);
+    --text-color-solid-300: rgb(56, 65, 74);
+    --text-color-solid-350: rgb(44, 51, 58);
+    --text-color-solid-400: rgb(69, 79, 89);
+    --text-color-solid-500: rgb(89, 103, 115);
+    --text-color-solid-600: rgb(115, 132, 150);
+    --text-color-solid-700: rgb(140, 155, 171);
+    --text-color-solid-800: rgb(159, 173, 188);
+    --text-color-solid-900: rgb(182, 194, 207);
+    --text-color-solid-1000: rgb(199, 209, 219);
+    --text-color-solid-1100: rgb(222, 228, 234);
+
+    /* Text Alpha Color */
+    --text-color-alpha-0: rgba(3, 4, 4, 0.26);
+    --text-color-alpha-100: rgba(188, 214, 240, 0.04);
+    --text-color-alpha-150: rgba(184, 209, 242, 0.06);
+    --text-color-alpha-200: rgba(161, 189, 217, 0.08);
+    --text-color-alpha-250: rgba(200, 225, 249, 0.1);
+    --text-color-alpha-300: rgba(166, 197, 226, 0.16);
+    --text-color-alpha-350: rgba(195, 222, 254, 0.2);
+    --text-color-alpha-400: rgba(191, 219, 248, 0.28);
+    --text-color-alpha-500: rgba(155, 180, 202, 0.5);
+
+    /* Diver Solid Color */
+    --diver-color-solid-0: rgba(115, 132, 150, 0.5);
+    --diver-color-solid-100: rgba(188, 214, 240, 0.04);
+    --diver-color-solid-150: rgba(184, 209, 242, 0.06);
+    --diver-color-solid-200: rgba(161, 189, 217, 0.08);
+    --diver-color-solid-250: rgba(200, 225, 249, 0.1);
+    --diver-color-solid-300: rgba(166, 197, 226, 0.16);
+    --diver-color-solid-350: rgba(195, 222, 254, 0.2);
+    --diver-color-solid-400: rgba(191, 219, 248, 0.28);
+    --diver-color-solid-500: rgba(155, 180, 202, 0.5);
+
+    /* Gray Solid Color (Optional) */
+    --gray-50: #131920;
+    --gray-100: #222934;
+    --gray-200: #333d4c;
+    --gray-300: #4e5562;
+    --gray-400: #6c727f;
+    --gray-500: #9ca3af;
+    --gray-600: #cad0d9;
+    --gray-700: #e0e5eb;
+    --gray-800: #eef1f6;
+    --gray-900: #f5f7fa;
+    --gray-950: #ffffff;
+  }
+}

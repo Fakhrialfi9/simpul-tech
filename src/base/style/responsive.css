@@ -1,0 +1,110 @@
+/* ================================================================================================== */
+/* ====================  T H I S  R E S P O N S I V E  M A X - W I D T H 576px  ===================== */
+/* ================================================================================================== */
+
+@media (max-width: 576px) {
+  .Container {
+    width: 95% !important;
+    max-width: 576px !important;
+    user-select: none !important;
+  }
+
+  .DisplayNone-SM {
+    display: none !important;
+  }
+
+  .DisplayBlock-SM {
+    display: flex !important;
+  }
+}
+
+/* ================================================================================================== */
+/* ====================  T H I S  R E S P O N S I V E  M A X - W I D T H 768px  ===================== */
+/* ================================================================================================== */
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .Container {
+    width: 95% !important;
+    max-width: 768px !important;
+    user-select: none !important;
+  }
+  .DisplayNone-MD {
+    display: none !important;
+  }
+  .DisplayBlock-MD {
+    display: flex !important;
+  }
+}
+
+/* ================================================================================================== */
+/* ===================  T H I S  R E S P O N S I V E  M A X - W I D T H 991px  ====================== */
+/* ================================================================================================== */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .Container {
+    width: 95% !important;
+    max-width: 991px;
+    user-select: none !important;
+  }
+
+  .DisplayNone-LG {
+    display: none !important;
+  }
+
+  .DisplayBlock-LG {
+    display: flex !important;
+  }
+}
+
+/* ================================================================================================== */
+/* ====================  T H I S  R E S P O N S I V E  M A X - W I D T H 1200px  ==================== */
+/* ================================================================================================== */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .Container {
+    width: 90% !important;
+    max-width: 1200px;
+    user-select: none !important;
+  }
+  .DisplayNone-XL {
+    display: none !important;
+  }
+  .DisplayBlock-XL {
+    display: flex !important;
+  }
+}
+
+/* ================================================================================================== */
+/* ====================   T H I S  R E S P O N S I V E  M A X - W I D T H 1400px  =================== */
+/* ================================================================================================== */
+
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .Container {
+    width: 90%;
+    max-width: 1400px;
+    user-select: none !important;
+  }
+  .DisplayNone-XXL {
+    display: none !important;
+  }
+  .DisplayBlock-XXL {
+    display: flex !important;
+  }
+}
+
+/* ================================================================================================== */
+/* ====================  T H I S  R E S P O N S I V E  M A X - W I D T H 1600px  ==================== */
+/* ================================================================================================== */
+
+@media (min-width: 1401px) and (max-width: 1600px) {
+  .Container {
+    width: 90%;
+    user-select: none !important;
+  }
+  .DisplayNone-XXXL {
+    display: none !important;
+  }
+  .DisplayBlock-XXXL {
+    display: flex !important;
+  }
+}

@@ -1,0 +1,325 @@
+/* ================================================================================================== */
+/* ==============================================  FONT  ============================================ */
+/* ================================================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+/* Start Inter Font Styles */
+
+.inter-thin {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.inter-extralight {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-medium {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.inter-semibold {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.inter-extrabold {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.inter-black {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.inter-thin-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.inter-extralight-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.inter-light-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.inter-regular-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.inter-medium-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.inter-semibold-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.inter-bold-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.inter-extrabold-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.inter-black-italic {
+  font-family: "Inter", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* ================================================================================================== */
+/* ==============================================  DIVER  =========================================== */
+/* ================================================================================================== */
+
+.diver {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  border: 0.05rem solid var(--diver-color-solid-0);
+}
+
+.diver-vertical {
+  width: 0.01rem;
+  min-width: 0.01rem;
+  height: 50%;
+  min-height: 1.3rem;
+  border: 0.0001rem solid var(--diver-color-solid-0);
+}
+
+/* ================================================================================================== */
+/* ============================================  CONTAINER  ========================================= */
+/* ================================================================================================== */
+
+.Container {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: calc(0.5rem * 0.5);
+  padding-right: calc(0.5rem * 0.5);
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ================================================================================================== */
+/* =============================================  SHADOW  =========================================== */
+/* ================================================================================================== */
+
+.shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-2xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* ================================================================================================== */
+/* =============================================  TOOLTIP  ========================================== */
+/* ================================================================================================== */
+
+/* Start Tooltip container */
+.Tooltip {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.Tooltip .TooltipText {
+  position: absolute;
+  visibility: hidden;
+  width: auto;
+  max-width: none;
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+  z-index: 1;
+  top: 100%; /* Position the tooltip above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: var(--border-radius);
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.Tooltip .TooltipText::after {
+  content: "";
+  position: absolute;
+  bottom: 100%; /* Position the arrow at the bottom of the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--dark-color) transparent;
+}
+
+.Tooltip:hover .TooltipText {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* ================================================================================================== */
+/* ===========================================  PADDING X, Y  ======================================= */
+/* ================================================================================================== */
+
+.py-1 {
+  padding-top: calc(var(--spacing-unit) * 1) !important ;
+  padding-bottom: calc(var(--spacing-unit) * 1) !important ;
+}
+.py-2 {
+  padding-top: calc(var(--spacing-unit) * 2) !important ;
+  padding-bottom: calc(var(--spacing-unit) * 2) !important ;
+}
+.py-3 {
+  padding-top: calc(var(--spacing-unit) * 3) !important ;
+  padding-bottom: calc(var(--spacing-unit) * 3) !important ;
+}
+.py-4 {
+  padding-top: calc(var(--spacing-unit) * 4) !important ;
+  padding-bottom: calc(var(--spacing-unit) * 4) !important ;
+}
+.py-5 {
+  padding-top: calc(var(--spacing-unit) * 5) !important ;
+  padding-bottom: calc(var(--spacing-unit) * 5) !important ;
+}
+.py-6 {
+  padding-top: calc(var(--spacing-unit) * 6) !important ;
+  padding-bottom: calc(var(--spacing-unit) * 6) !important ;
+}
+.py-7 {
+  padding-top: calc(var(--spacing-unit) * 7) !important ;
+  padding-bottom: calc(var(--spacing-unit) * 7) !important ;
+}
+.py-8 {
+  padding-top: calc(var(--spacing-unit) * 8) !important ;
+  padding-bottom: calc(var(--spacing-unit) * 8) !important ;
+}
+
+/* Padding Horizontal (px) */
+.px-1 {
+  padding-left: calc(var(--spacing-unit) * 1) !important ;
+  padding-right: calc(var(--spacing-unit) * 1) !important ;
+}
+.px-2 {
+  padding-left: calc(var(--spacing-unit) * 2) !important ;
+  padding-right: calc(var(--spacing-unit) * 2) !important ;
+}
+.px-3 {
+  padding-left: calc(var(--spacing-unit) * 3) !important ;
+  padding-right: calc(var(--spacing-unit) * 3) !important ;
+}
+.px-4 {
+  padding-left: calc(var(--spacing-unit) * 4) !important ;
+  padding-right: calc(var(--spacing-unit) * 4) !important ;
+}
+.px-5 {
+  padding-left: calc(var(--spacing-unit) * 5) !important ;
+  padding-right: calc(var(--spacing-unit) * 5) !important ;
+}
+.px-6 {
+  padding-left: calc(var(--spacing-unit) * 6) !important ;
+  padding-right: calc(var(--spacing-unit) * 6) !important ;
+}
+.px-7 {
+  padding-left: calc(var(--spacing-unit) * 7) !important ;
+  padding-right: calc(var(--spacing-unit) * 7) !important ;
+}
+.px-8 {
+  padding-left: calc(var(--spacing-unit) * 8) !important ;
+  padding-right: calc(var(--spacing-unit) * 8) !important ;
+}
+
+/* ================================================================================================== */
+/* ===========================================  BLUR EFFECT  ======================================== */
+/* ================================================================================================== */
+
+.blurBackground {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 99;
+  background-color: rgb(24, 24, 24, 0.3);
+  backdrop-filter: blur(0.03rem);
+  transition: transform 0.5s ease-in-out;
+}
+
+.blurBackground.active {
+  display: flex;
+}

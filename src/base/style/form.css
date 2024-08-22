@@ -1,0 +1,475 @@
+/* ================================================================================================== */
+/* =======================================  FORM & LABEL  =========================================== */
+/* ================================================================================================== */
+
+form {
+  display: flex;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-height: auto;
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-md);
+  line-height: 1;
+  background-color: transparent;
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  box-sizing: border-box;
+}
+
+label {
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================================================================================== */
+/* ===========================================  FORM SELECT  ======================================== */
+/* ================================================================================================== */
+
+select {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%2321313c' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 0.85rem;
+  background-position: right 0.75rem center;
+  right: 0.75rem;
+  /* End Icon Arrow Setting */
+  appearance: none !important;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-height: auto;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--text-color-solid-0);
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  border: 0.08rem solid var(--diver-color-solid-0);
+  background-clip: padding-box;
+  margin: 0 auto;
+  padding: 0.5rem 2.5rem 0.5rem 0.5rem;
+  cursor: pointer;
+  text-align: left;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  place-items: center;
+  place-content: center;
+  font-weight: 500;
+}
+
+select::after {
+  position: absolute;
+}
+
+select:hover {
+  background-color: transparent;
+  border: 0.08rem solid var(--diver-color-solid-0);
+  color: var(--text-color-solid-0);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+select:focus {
+  outline: 0.08rem solid var(--primary-color);
+  background-color: transparent;
+  border: 0.08rem solid var(--diver-color-solid-0);
+  color: var(--text-color-solid-0);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* ================================================================================================== */
+/* ========================================  FORM INPUT OPTION ====================================== */
+/* ================================================================================================== */
+
+option {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ================================================================================================== */
+/* ===========================================  FORM INPUT  ========================================= */
+/* ================================================================================================== */
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  margin: 0;
+  padding: 0.65rem;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-sans);
+  border: 0.1rem solid var(--diver-color-solid-0);
+  border-radius: var(--border-radius);
+}
+
+input::placeholder {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+  outline: none;
+  box-shadow: none;
+}
+
+/* Input text */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="range"],
+input[type="color"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+input[type="password"],
+input[type="tel"],
+input[type="number"] {
+  font-size: 0.85rem;
+  background-color: var(--background-color-solid-0);
+  border: 0.1rem solid var(--diver-color-solid-0);
+  color: var(--text-color-solid-0);
+  padding: 0.65rem;
+}
+
+/* Input text */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder,
+input[type="number"]::placeholder,
+input[type="date"]::placeholder,
+input[type="time"]::placeholder,
+input[type="datetime-local"]::placeholder,
+input[type="month"]::placeholder,
+input[type="week"]::placeholder,
+input[type="range"]::placeholder,
+input[type="color"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="url"]::placeholder,
+input[type="search"]::placeholder,
+input[type="password"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="number"]::placeholder {
+  font-weight: 400;
+  font-size: 0.85rem;
+}
+
+/* Input text */
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="range"]:focus,
+input[type="color"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+  border: 0.1rem solid;
+  border-color: var(--primary-color);
+  background-color: var(--background-color-solid-0) !important;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Input text */
+input[type="text"]:active,
+input[type="password"]:active,
+input[type="email"]:active,
+input[type="number"]:active,
+input[type="date"]:active,
+input[type="time"]:active,
+input[type="datetime-local"]:active,
+input[type="month"]:active,
+input[type="week"]:active,
+input[type="range"]:active,
+input[type="color"]:active,
+input[type="tel"]:active,
+input[type="url"]:active,
+input[type="search"]:active,
+input[type="password"]:active,
+input[type="tel"]:active,
+input[type="number"]:active {
+  border: 0.1rem solid;
+  border-color: var(--primary-color);
+  background-color: var(--background-color-solid-0) !important;
+  outline: none;
+  box-shadow: none;
+}
+
+/* ================================================================================================== */
+/* =====================================  FORM SELECT CHECKBOX  ===================================== */
+/* ================================================================================================== */
+
+input[type="checkbox"] {
+  content: "";
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  border: 0.1rem solid var(--gray-300);
+  background-color: var(--white-color);
+}
+
+input[type="checkbox"]:checked {
+  border: 0.1rem solid var(--gray-300);
+  background-color: var(--primary-color);
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.15rem;
+  height: 1.15rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-check" viewBox="0 0 16 16"><path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* ================================================================================================== */
+/* ========================================  FORM INPUT RADIO  ====================================== */
+/* ================================================================================================== */
+
+input[type="radio"] {
+  content: "";
+  position: relative;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 50%;
+  vertical-align: middle;
+  cursor: pointer;
+  outline: none;
+  border: 0.1rem solid var(--gray-300);
+  background-color: var(--white-color);
+}
+
+input[type="radio"]:checked {
+  border: 0.1rem solid var(--gray-300);
+  background-color: var(--primary-color);
+}
+
+input[type="radio"]:checked::after {
+  border: 0.1rem solid var(--gray-300);
+  background-color: var(--primary-color);
+}
+
+/* ================================================================================================== */
+/* =======================================  FORM INPUT FILE  ======================================== */
+/* ================================================================================================== */
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="file"] {
+  border: 1px solid var(--gray-300);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+input[type="image"] {
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+img {
+  user-drag: none !important;
+  user-select: none !important;
+  pointer-events: none !important;
+}
+
+/* ================================================================================================== */
+/* =======================================  FORM INPUT FILE  ======================================== */
+/* ================================================================================================== */
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-height: auto;
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  color: var(--vt-c-white-soft);
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  border: 0.05rem solid transparent;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  place-items: center;
+  place-content: center;
+  font-weight: 500;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+  background-color: var(--primary-color-dark);
+  border: 0.05rem solid transparent;
+  color: var(--vt-c-white-soft);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+/* ================================================================================================== */
+/* ========================================  FORM INPUT RANGE  ====================================== */
+/* ================================================================================================== */
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: var(var(--vt-c-white-soft));
+  height: 8px;
+  border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: var(--primary-color);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  background: var(--primary-color);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ================================================================================================== */
+/* ========================================  FORM INPUT DATE  ======================================= */
+/* ================================================================================================== */
+
+datalist {
+  display: none;
+}
+
+input[list] {
+  background-color: var(var(--vt-c-white-soft));
+}
+
+input[list]::-webkit-calendar-picker-indicator {
+  color: transparent;
+}
+
+input[list]::placeholder {
+  color: var(--component-hover-bg);
+}
+
+input[list]::-webkit-autofill {
+  background-color: var(var(--vt-c-white-soft));
+  color: var(--text-color-solid-0);
+}
+
+/* ================================================================================================== */
+/* ==============================  FORM INPUT EMAIL, SEARCH, URL  =================================== */
+/* ================================================================================================== */
+
+input[type="search"] {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0.9rem 1.5rem;
+  border-radius: var(--border-radius-2xl);
+  border: none;
+  line-height: 0;
+  outline: 0.08rem solid var(--diver-color-solid-0);
+  background-color: transparent;
+  color: var(--text-color-solid-0);
+  fill: var(--text-color-solid-0);
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  background-image: none;
+  display: none;
+}
+
+input[type="search"]:focus {
+  box-shadow: none;
+  outline: 0.08rem solid var(--text-color-solid-0);
+}
+
+/* ================================================================================================== */
+/* ====================================  FORM INPUT TEXTAREA  ======================================= */
+/* ================================================================================================== */
+
+textarea {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 5rem;
+  min-height: 5rem;
+  max-height: 10rem;
+  margin: 0;
+  padding: 0.65rem;
+  font-size: 0.85rem;
+  color: var(--text-color-solid-0);
+  font-family: var(--font-family-sans);
+  border: 0.1rem solid var(--diver-color-solid-0);
+  border-radius: var(--border-radius-md);
+  background-color: var(--background-color-solid-0);
+}
+
+textarea:focus {
+  border-color: var(--primary-color) !important;
+  outline: none;
+}

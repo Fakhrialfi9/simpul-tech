@@ -1,0 +1,462 @@
+.main {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow: scroll;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content > ul {
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.content > ul > li {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0 auto;
+  padding: 1.375rem 0;
+  border-bottom: 0.1rem solid var(--diver-color-solid-0);
+}
+
+.content > ul > li:last-child {
+  border-bottom: none;
+}
+
+.content > ul > li > form {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+  transition: all 0.5s ease;
+}
+
+.content > ul > li > form > .select {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: 1rem;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+.content > ul > li > form > .information {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.content > ul > li > form > .information > .header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100%;
+  min-height: 1rem;
+  max-height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content > ul > li > form > .information > .header > .title {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content > ul > li > form > .information > .header > .title > h5 {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+  color: var(--text-color-transparent-100);
+}
+
+.content > ul > li > .newtaskform > .information > .header > .title {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.content > ul > li > .newtaskform > .information > .header > .title > input {
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.content > ul > li > form > .information > .header > .function {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  min-width: 50%;
+  max-width: 50%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.content > ul > li > form > .information > .header > .function > h6 {
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.content > ul > li > form > .information > .header > .function > h6:nth-child(1) {
+  color: var(--danger-color);
+}
+
+.hide {
+  display: none !important;
+}
+
+.content > ul > li > form > .information > .header > .function > .ChevronDown {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.content > ul > li > form > .information > .header > .function > .ChevronDown.active {
+  transform: rotate(180deg);
+  transition: all 0.25s ease;
+}
+
+.content > ul > li > form > .information > .header > .function > span {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.select {
+  display: none;
+}
+
+.select.active {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  min-width: 15rem;
+  max-width: 15rem;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--background-color-solid-0);
+  border: 0.1rem solid var(--diver-color-solid-0);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.select.active > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.select.active > ul > li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0.5rem 0.85rem;
+  border-bottom: 0.1rem solid var(--diver-color-solid-0);
+  background-color: var(--background-color-solid-0);
+}
+
+.select.active > ul > li:hover {
+  background-color: var(--background-color-solid-150);
+}
+
+.select.active > ul > li:last-child {
+  border-bottom: none;
+}
+
+.select.active > ul > li > a {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.content > ul > li > form > .information > .body.active {
+  display: none;
+}
+
+.content > ul > li > form > .information > .body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.content > ul > li > .newtaskform > .information > .body > input {
+  width: 45.5%;
+  min-width: 45.5%;
+  max-width: 45.5%;
+}
+
+.content > ul > li > form > .information > .body > span {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color) !important;
+}
+
+.content > ul > li > form > .information > .footer.active {
+  display: none;
+}
+
+.content > ul > li > form > .information > .footer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.content > ul > li > .newtaskform > .information > .footer > input {
+  width: 46.25%;
+  min-width: 46.25%;
+  max-width: 46.25%;
+}
+
+.content > ul > li > form > .information > .footer > span {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  color: var(--primary-color) !important;
+}
+
+.content > ul > li > form > .information > .footer > p {
+  font-size: 0.85rem;
+  font-weight: 400;
+  width: 70%;
+}

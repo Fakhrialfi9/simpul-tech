@@ -1,0 +1,464 @@
+.main {
+  flex: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: scroll;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  gap: 2.5rem;
+}
+
+.containerbubblesend {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: flex-end;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  gap: 0.85rem;
+}
+
+.containerbubblesend > .username {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.containerbubblesend > .username > h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.containerbubblesend > .wrapbubble {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.containerbubblesend > .wrapbubble > span {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0 0.85rem;
+  cursor: pointer;
+}
+
+.containerbubblesend > .wrapbubble > .bubble {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: 20rem;
+  max-width: 35rem;
+  height: auto;
+  min-height: 3.5rem;
+  max-height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0;
+  padding: 0.5rem 0.85rem;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius-md);
+  gap: 0.85rem;
+}
+
+.containerbubblesend > .wrapbubble > .bubble > h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+}
+
+.containerbubblesend > .wrapbubble > .bubble > p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.newmessage {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  gap: 0.5rem;
+}
+
+.newmessage > h5 {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: 13.5rem;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.loadingconversation {
+  position: fixed;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  min-width: 70%;
+  max-width: 70%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0.5rem 1rem !important;
+  z-index: 999;
+  opacity: 1;
+  background-color: var(--background-color-solid-100);
+  gap: 1rem;
+}
+
+.spinner {
+  border: 0.2rem solid var(--background-color-solid-0);
+  border-left-color: var(--text-color-solid-0);
+  border-radius: 50%;
+  width: 1.25rem;
+  height: 1.25rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingconversation > h5 {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.badgenewmessage {
+  position: fixed;
+  bottom: 5rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  z-index: 99;
+}
+
+.badgenewmessage > code {
+  opacity: 1;
+  background-color: var(--background-color-solid-100);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.containerbubblereceive {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
+  gap: 0.85rem;
+}
+
+.containerbubblereceive > .username {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.containerbubblereceive > .username > h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.containerbubblereceive > .wrapbubble {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.containerbubblereceive > .wrapbubble > span {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0 0.85rem;
+  cursor: pointer;
+}
+
+.containerbubblereceive > .wrapbubble > .bubble {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: 20rem;
+  max-width: 35rem;
+  height: auto;
+  min-height: 3.5rem;
+  max-height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0;
+  padding: 0.5rem 0.85rem;
+  background-color: var(--success-color);
+  border-radius: var(--border-radius-md);
+  gap: 0.85rem;
+}
+
+.containerbubblereceive > .wrapbubble > .bubble > h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: right;
+  line-height: 1.5;
+  color: rgb(255, 255, 255);
+}
+
+.containerbubblereceive > .wrapbubble > .bubble > p {
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+
+.select {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  min-width: 15rem;
+  max-width: 15rem;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  background-color: var(--background-color-solid-0);
+  border: 0.1rem solid var(--diver-color-solid-0);
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.select > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+.select > ul > li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding: 0.5rem 0.85rem;
+  border-bottom: 0.1rem solid var(--diver-color-solid-0);
+  background-color: var(--background-color-solid-0);
+}
+
+.select > ul > li:hover {
+  background-color: var(--background-color-solid-150);
+}
+
+.select > ul > li:last-child {
+  border-bottom: none;
+}
+
+.select > ul > li > a {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+  min-height: auto;
+  max-height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}

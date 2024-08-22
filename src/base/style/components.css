@@ -1,0 +1,81 @@
+/* ================================================================================================== */
+/* =========================================  BUTTON  =============================================== */
+/* ================================================================================================== */
+
+button {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  width: auto;
+  max-width: auto;
+  height: auto;
+  max-height: auto;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 0.05rem solid transparent;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-align: center;
+  place-items: center;
+  place-content: center;
+  vertical-align: middle;
+  transition: all 0.2s ease-in-out;
+  color: rgb(255, 255, 255);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-md);
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+}
+
+button:hover {
+  background-color: var(--primary-color-dark);
+  border: 0.05rem solid transparent;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+/* ================================================================================================== */
+/* ==============================================  TABLE  =========================================== */
+/* ================================================================================================== */
+
+table {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  background-color: transparent;
+  table-layout: fixed;
+  border-collapse: collapse;
+  font-family: var(--font-family-sans);
+}
+
+thead tr {
+  color: var(--dark-color);
+  text-align: left;
+  font-size: inherit;
+  font-weight: 300;
+  font-family: var(--font-family-sans);
+}
+
+tbody tr {
+  color: var(--dark-color);
+  text-align: left;
+  font-size: inherit;
+  font-weight: 300;
+  font-family: var(--font-family-sans);
+}
+
+th,
+td {
+  padding: 1rem;
+  font-family: var(--font-family-sans);
+}
