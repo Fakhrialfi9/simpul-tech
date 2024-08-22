@@ -13,7 +13,7 @@
   align-items: center;
   align-content: center;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0;
   overflow: scroll;
 }
 
@@ -65,7 +65,7 @@
   align-items: flex-start;
   align-content: center;
   margin: 0 auto;
-  padding: 1.375rem 0;
+  padding: 1.375rem 1rem;
   border-bottom: 0.1rem solid var(--diver-color-solid-0);
 }
 
